@@ -2,7 +2,7 @@ const caillouList = [{
     "nom": "Caillou agate",
     "description": "Cette pierre peut sembler ordinaire à première vue, mais elle est en réalité très polyvalente. Elle peut être utilisée pour stimuler la créativité, améliorer la confiance en soi et favoriser la guérison émotionnelle. De plus, chaque agate est unique en termes de motif et de couleur, ce qui la rend idéale pour la décoration intérieure ou la collection de pierres.",
     "prix": 19.99,
-    "img": "C:/Users/Anton/Documents/Cours-Bachelor/web-dev/code/exercices-js/12_burger/ressources/AG.jpg",
+    "img": "https://cdn.discordapp.com/attachments/788291502374780958/1105090342262419506/AG.jpg",
     "composition": [" silice", " quartz", " calcédoine", " oxygène"],
     "id": 1
     },
@@ -11,7 +11,7 @@ const caillouList = [{
     "nom": "Caillou jaspe dalmatien",
     "description": "Cette pierre est nommée ainsi en raison de ses taches noires, qui ressemblent à celles d'un chien dalmatien. Bien que cette pierre soit souvent considérée comme ordinaire, elle peut en fait aider à améliorer la communication et la confiance en soi. Elle est également idéale pour ceux qui cherchent à surmonter les traumatismes émotionnels ou les peurs.",
     "prix": 9.99,
-    "img": "C:/Users/Anton/Documents/Cours-Bachelor/web-dev/code/exercices-js/12_burger/ressources/JD.jpg",
+    "img": "https://cdn.discordapp.com/attachments/788291502374780958/1105091001846071326/JD.jpg",
     "composition": [" silice", " quartz", " argile", " calcédoine"],
     "id": 2
     },
@@ -20,7 +20,7 @@ const caillouList = [{
     "nom": "Caillou de lave",
     "description": "Cette pierre est souvent utilisée pour sa capacité à absorber les huiles essentielles et à les libérer lentement dans l'air. Elle est donc idéale pour créer une ambiance de détente dans votre espace de vie. De plus, la pierre de lave est très légère, ce qui la rend idéale pour les bijoux.",
     "prix": 29.99,
-    "img": "C:/Users/Anton/Documents/Cours-Bachelor/web-dev/code/exercices-js/12_burger/ressources/PDL.jpg",
+    "img": "https://cdn.discordapp.com/attachments/788291502374780958/1105092931225919709/PDL.jpg",
     "composition": [" fer", " magnésium", " calcium", " basalte"],
     "id": 3
     },
@@ -29,7 +29,7 @@ const caillouList = [{
     "nom": "Caillou de quartzite",
     "description": "Cette pierre est souvent confondue avec le quartz, mais elle est en fait plus dure et plus résistante. Elle est souvent utilisée pour la construction de routes et de bâtiments, mais elle peut également être utilisée dans la décoration intérieure. En raison de sa robustesse, elle est idéale pour les zones à forte circulation.",
     "prix": 49.99,
-    "img": "C:/Users/Anton/Documents/Cours-Bachelor/web-dev/code/exercices-js/12_burger/ressources/QZ.jpg",
+    "img": "https://cdn.discordapp.com/attachments/788291502374780958/1105093497150783508/QZ.jpg",
     "composition": [" quartz minéral", " grès"],
     "id": 4
     },
@@ -38,7 +38,7 @@ const caillouList = [{
     "nom": "Caillou de sable",
     "description": "Cette pierre est souvent considérée comme ordinaire, mais elle peut être utilisée pour créer une ambiance naturelle dans votre espace de vie. Elle peut être utilisée comme matériau de remplissage dans les jardins de rocaille ou comme décoration dans les aquariums.",
     "prix": 4.99,
-    "img": "C:/Users/Anton/Documents/Cours-Bachelor/web-dev/code/exercices-js/12_burger/ressources/CS.jpg",
+    "img": "https://cdn.discordapp.com/attachments/788291502374780958/1105094320534585464/CS.jpg",
     "composition": [" silicium", " oxygène"],
     "id": 5
     }
