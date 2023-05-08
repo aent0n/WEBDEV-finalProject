@@ -1,0 +1,51 @@
+.background {
+
+  background-image: url(https://cdn.discordapp.com/attachments/788291502374780958/1105129895631273984/BAND.jpg);
+  background-size: cover;
+}
+
+.midPic {
+
+  background-image: url(https://cdn.discordapp.com/attachments/788291502374780958/1105129895916470443/obsiBAND.jpg);
+  background-size: cover;
+}
+.homeBAND {
+    
+  background-image: url(https://cdn.discordapp.com/attachments/788291502374780958/1105128674631622746/KYOUL2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.excepPadding {
+
+  padding: 50px ;
+}
+
+.box {
+  background: white;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.box:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 8px solid rgb(41,41,41);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+.hoverW {
+  
+  --c: #1095c1;
+  transition: .5s;
+}
+
+.hoverW:hover {
+
+  color: var(--c);
+}

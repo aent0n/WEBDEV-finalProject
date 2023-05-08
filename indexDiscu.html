@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scriptDiscu.js" defer="true"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">  <!-- OPEN SANS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- ROBOTO -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyA9kjcDQZPvZXUgpJ8YdkMQjCeRfZL_9k4",
+          authDomain: "nth-pottery-323907.firebaseapp.com",
+          projectId: "nth-pottery-323907",
+          storageBucket: "nth-pottery-323907.appspot.com",
+          messagingSenderId: "19299134769",
+          appId: "1:19299134769:web:d9ba1abcf59f851a10d410"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+
+</head>
+
+  <body>
+    <div id="menu" class="flex justify-around pb-1">
+
+      <div class="flex pr-20">
+          <a href="indexLanding.html" class="connexion text-lg cursor-pointer">⠀⠀Acceuil⠀⠀</a>
+          <a href="indexSaison.html" class="connexion text-lg cursor-pointer">⠀⠀Cailloux de saison⠀⠀</a>
+          <a href="indexVente.html" class="connexion text-lg cursor-pointer">⠀⠀Vendre mes cailloux⠀⠀</a>
+      </div>
+
+      <div class="flex">
+        <a href="indexLanding.html"><img src="https://cdn.discordapp.com/attachments/788291502374780958/1105123885344620644/rsz_2roclogo.jpg" alt="LOGO"></a>
+      </div>
+      
+      <div class=" flex pl-20">
+          <a href="indexCollec.html" class="connexion text-lg cursor-pointer">⠀⠀Mon tas de Cailloux⠀⠀</a>
+          <a href="index.html" class="connexion text-lg cursor-pointer">⠀⠀Acheter des cailloux⠀⠀</a>
+          <a href="indexLogin.html" class="connexion text-lg cursor-pointer">⠀⠀Se connecter⠀⠀</a>
+      </div>
+
+    </div>
+
+	<main class="py-10 bg-gray-100">
+		<div class="container mx-auto">
+			<section class="category mb-10">
+				<h2 class="text-2xl font-bold mb-4">Discussions générales</h2>
+				<div class="thread bg-[#D9D9D9] border cursor-pointer border-gray-200 hover:scale-105 hover:border-black transition-transform hover:bg-[#F7F7F7] rounded-2xl hover:text-black-500 p-4 mb-4">
+					<h3 class="text-xl font-bold mb-2"><a href="#" class="">Quel est votre caillou préféré?</a></h3>
+					<p class="text-gray-600 text-sm mb-2">par <a href="#" class="hover:text-blue-800">JohnDoe</a><a href="#" class="hover:text-orange-700"> le 1er mai 2023</a></p>
+					<p class="text-gray-800">Je suis curieux de savoir quel est le caillou préféré de chacun. Pour ma part, j'aime beaucoup la péridotite pour sa couleur et son origine magique...</p>
+				</div>
+				<div class="thread bg-[#D9D9D9] border cursor-pointer border-gray-200 hover:scale-105 hover:border-black transition-transform hover:bg-[#F7F7F7] rounded-2xl hover:text-black-500 p-4 mb-4">
+					<h3 class="text-xl font-bold mb-2"><a href="#" class="">Comment nettoyer du sable?</a></h3>
+					<p class="text-gray-600 text-sm mb-2">par <a href="#" class="hover:text-blue-800">FilippAsh45</a> <a href="#" class="hover:text-orange-700">le 2 mai 2023</a></p>
+					<p class="text-gray-800">J'aimerais savoir comment nettoyer du sable sans l'abîmer. Quelqu'un a des astuces utiles ?</p>
+				</div>
+			</section>
+			<section class="category">
+				<h2 class="text-2xl font-bold mb-4">Types de cailloux</h2>
+				<div class="thread bg-[#D9D9D9] border cursor-pointer border-gray-200 hover:scale-105 hover:border-black transition-transform hover:bg-[#F7F7F7] rounded-2xl hover:text-black-500 p-4 mb-4">
+					<h3 class="text-xl font-bold mb-2"><a href="#" class="">Le quartz rose</a></h3>
+					<p class="text-gray-600 text-sm mb-2">par <a href="#" class="hover:text-blue-800">Alice123</a> <a href="#" class="hover:text-orange-700">le 3 mai 2023</a> </p>
+					<p class="">Le quartz rose est un caillou très intéressant en lithothérapie. Quelqu'un a des expériences à partager?</p>
+				</div>
+				<div class="thread bg-[#D9D9D9] border cursor-pointer border-gray-200 hover:scale-105 hover:border-black transition-transform hover:bg-[#F7F7F7] rounded-2xl hover:text-black-500 p-4 mb-4">
+					<h3 class="text-xl font-bold mb-2"><a href="#" class="">Les roches volcaniques</a></h3>
+					<p class="text-gray-600 text-sm mb-2">par <a href="#" class="hover:text-blue-800">Bob567</a> <a href="#" class="hover:text-orange-700">le 3 mai 2023</a></p>
+					<p class="">Je suis fasciné par les roches volcaniques et leur origine. Quelqu'un a des recommandations de livres ou de documentaires à ce sujet?</p>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<div class="bg-[#292929] pt-5 text-white w-full h-full">
+    <div class="bg-[#292929] pt-5 text-white w-full h-full">
+        <div class="flex justify-around pb-10">
+            <div class="ml-8">
+                <div class=" pt-7">
+                    <a href="#" class="underline">Chasse aux cailloux annuelle</a>
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex pt-5">
+                        Abonnez-vous pour ne rater aucune newsletter!
+                    </div>
+                    <div class="flex pt-3">
+                        <textarea name="end_mail" id="endmail" cols="30" rows="1" placeholder=" abcd@xyz.com" class="flex text-black text-lg rounded-xl bg-[#D9D9D9]"></textarea>
+                        <a href="#" class="bg-[#D9D9D9] flex px-2 text-xl rounded-xl ml-4 cursor-pointer hover:scale-105"><img src="https://cdn.discordapp.com/attachments/788291502374780958/1105124062725931089/image_16.png" alt="paperplane" class="flex mx-2"></a>
+                    </div>
+                </div>
+                <div class="pt-5 pb-5">
+                    <img src="https://cdn.discordapp.com/attachments/788291502374780958/1105124140299599882/Line_1_1.png" alt="line">
+                </div>
+                <div class="flex">
+                    <div class="flex">
+                        <img src="https://cdn.discordapp.com/attachments/788291502374780958/1105124216585584761/Rectangle_22.png" alt="follow_us">
+                    </div>
+                    <div class="flex underline ml-4 pt-1">
+                    <a href="#">Suivez-nous</a> 
+                    </div>
+    
+                </div>
+                <div class="flex pt-5 pb-5">
+                    Offres exclusives, jeux de pierres, trouvailles, et bien plus!
+                </div>
+            </div>
+            <div class="flex">
+                <iframe src="https://antonethan2014.typeform.com/to/LL55aU4g" frameborder="0" class="rounded-xl"></iframe>
+            </div>
+            <div class="flex flex-col">
+                <div class="flex">
+                    <div>
+                        <img src="https://cdn.discordapp.com/attachments/788291502374780958/1105124339680038962/Rectangle_23.png" alt="General">
+                    </div>
+                    <div class="ml-4">
+                        Général
+                    </div>
+                </div>
+                <div class="flex pt-5">
+                    <ul>
+                        <li>
+                            <a href="#">Qui sommes-nous ?</a> 
+                        </li>
+                        <li>
+                            <a href="#">F.A.Q</a>
+                        </li>
+                        <li>
+                            <a href="#">Conditions Générales de Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Conditions Générales</a>
+                        </li>
+                        <li>
+                            <a href="#">Politique de confidentialité Utilisateurs</a>
+                        </li>
+                        <li>
+                            <a href="#">Utilisation des cookies</a>
+                        </li>
+                        <li>
+                            <a href="#">Mentions légales</a>
+                        </li>
+                        <li>
+                            <a href="#">Collecte avis clients</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+</body>
+</html>

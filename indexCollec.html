@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+	<script src="scriptCollec.js" defer="true"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">  <!-- OPEN SANS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- ROBOTO -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyA9kjcDQZPvZXUgpJ8YdkMQjCeRfZL_9k4",
+          authDomain: "nth-pottery-323907.firebaseapp.com",
+          projectId: "nth-pottery-323907",
+          storageBucket: "nth-pottery-323907.appspot.com",
+          messagingSenderId: "19299134769",
+          appId: "1:19299134769:web:d9ba1abcf59f851a10d410"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
+
+</head>
+<body>
+    <div id="menu" class="flex justify-around pb-1">
+
+		<div class="flex pr-20">
+			<a href="indexLanding.html" class="connexion text-lg cursor-pointer">⠀⠀Acceuil⠀⠀</a>
+			<a href="indexSaison.html" class="connexion text-lg cursor-pointer">⠀⠀Cailloux de saison⠀⠀</a>
+			<a href="indexDiscu.html" class="connexion text-lg cursor-pointer">⠀⠀Caillassons ensemble⠀⠀</a>
+		</div>
+  
+		<div class="flex">
+		  <a href="indexLanding.html"><img src="https://cdn.discordapp.com/attachments/788291502374780958/1105123885344620644/rsz_2roclogo.jpg" alt="LOGO"></a>
+		</div>
+		
+		<div class=" flex pl-20">
+			<a href="indexVente.html" class="connexion text-lg cursor-pointer">⠀⠀Vendre des cailloux⠀⠀</a>
+			<a href="index.html" class="connexion text-lg cursor-pointer">⠀⠀Acheter des cailloux⠀⠀</a>
+			<a href="indexLogin.html" class="connexion text-lg cursor-pointer">⠀⠀Se connecter⠀⠀</a>
+		</div>
+  
+	
+	</div>
+
+	<main class=" bg-gray-100 rounded-xl mx-auto py-8 px-6">
+		<section class="my-gems mb-10">
+			<h2 class="text-3xl font-bold mb-6">Mes cailloux enregistrés</h2>
+
+
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+				<div class="bg-white shadow-md rounded-lg overflow-hidden">
+					<div class="px-4 py-2">
+						<h3 class="text-xl font-bold mb-2">Jaspe Dalmatien</h3>
+					</div>
+					<img src="https://cdn.shopify.com/s/files/1/0018/0987/5003/articles/le-jaspe-dalmatien.jpg?v=1640799268" alt="J-Dalmatien" class="w-full h-48 object-contain">
+					<div class="px-4 py-2">
+						<p class="text-gray-700 text-base mb-2">Le jaspe dalmatien est une pierre précieuse qui semble tout droit sortie d'un conte de fées. Avec son apparence unique, il est facile de comprendre pourquoi il est si populaire auprès des amateurs de pierres précieuses et des collectionneurs.</p>
+						<div class="flex justify-around mb-2 ">
+							<button id="show-popup1" class=" bg-slate-500 mt-5 text-slate-100 px-2 hover:scale-105 transition-transform rounded-xl">En savoir plus</button>
+
+							<div id="popup1" class="hidden fixed top-0 left-0 w-full h-full bg-slate-200 bg-opacity-75 flex items-center justify-center">
+								<div class="bg-white flex flex-col justify-center rounded-lg p-8">
+								  <h2 class="text-2xl text-center font-bold text-slate-500 mb-4">Jaspe Dalmatien</h2>
+								  <p class="text-lg text-center">Le jaspe dalmatien est une pierre fascinante et mystérieuse. Elle doit son nom à ses taches noires qui ressemblent étonnamment aux taches d'un dalmatien, le chien célèbre pour ses taches noires et blanches. Les taches noires contrastent magnifiquement avec la couleur de fond blanc crème du jaspe, créant un effet visuel époustouflant.
+									Mais ce n'est pas seulement son apparence qui rend le jaspe dalmatien si spécial. Cette pierre est également connue pour ses propriétés curatives. On dit qu'elle aide à soulager le stress et l'anxiété, tout en apportant un sentiment de calme et de paix intérieure. Elle est également utilisée pour stimuler la créativité et la productivité, ce qui en fait une pierre idéale pour les artistes et les travailleurs indépendants.
+									Le jaspe dalmatien est un véritable trésor de la nature, qui allie beauté et bien-être en une seule pierre. Que ce soit pour ses propriétés curatives ou simplement pour sa beauté unique, cette pierre ne manquera pas de vous fasciner et de vous inspirer.</p>
+								  <button id="close-popup1" class="bg-slate-500 text-white mx-20 px-4 py-2 rounded-lg mt-4">Fermer</button>
+								</div>
+							</div>
+
+
+							<p class="mr-5 text-black px-2 py-1">Authentifiée: <button class="bg-green-700 mt-5 text-slate-100 px-2 hover:scale-105 transition-transform rounded-lg">Oui</button></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-white shadow-md rounded-lg overflow-hidden">
+						<div class="px-4 py-2">
+							<h3 class="text-xl font-bold mb-2">Galet</h3>
+						</div>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLruPv60NT2A-VQpAN-QORwPSP0ow1VN7oewzL80mBKQz9ffNBN5WA37tARLso2DRWxOo&usqp=CAU" alt="gallet" class="w-full h-48 object-cover">
+						<div class="px-4 py-2">
+							<p class="text-gray-700 text-base mb-2">Les galets sont des pierres fascinantes qui ont captivé l'imagination des gens depuis des siècles. Avec leur forme lisse et arrondie, ils sont souvent considérés comme des symboles de paix et de sérénité.</p>
+							<div class="flex justify-around mb-2 ">
+								<button id="show-popup2" class=" bg-slate-500 mt-5 text-slate-100 px-2 hover:scale-105 transition-transform rounded-xl">En savoir plus</button>
+
+								<div id="popup2" class="hidden fixed top-0 left-0 w-full h-full bg-slate-200 bg-opacity-75 flex items-center justify-center">
+									<div class="bg-white flex flex-col justify-center rounded-lg p-8">
+									  <h2 class="text-2xl text-center font-bold text-slate-500 mb-4">Le Galet</h2>
+									  <p class="text-lg text-center">Les galets ne sont pas seulement beaux, ils ont également une signification culturelle et symbolique dans de nombreuses cultures à travers le monde. Dans certaines cultures, les galets sont utilisés pour représenter des énergies spécifiques ou pour aider à la méditation. Dans d'autres, ils sont considérés comme des talismans de chance ou de protection.
+										Les galets sont également des objets fascinants sur le plan géologique. Ils sont formés par l'érosion et le transport des roches par les cours d'eau et les vagues de l'océan. Les galets peuvent contenir des indices importants sur l'histoire géologique de la région où ils ont été formés, tels que des fossiles ou des minéraux spécifiques.
+										Mais peut-être que la chose la plus merveilleuse à propos des galets est leur polyvalence. Ils peuvent être utilisés de nombreuses façons différentes dans l'art, la décoration intérieure et même dans la construction. Les galets peuvent être peints, gravés, empilés ou simplement disposés dans des motifs pour créer des designs uniques et originaux.</p>
+									  <button id="close-popup2" class="bg-slate-500 text-white mx-20 px-4 py-2 rounded-lg mt-4">Fermer</button>
+									</div>
+								</div>
+
+								<p class="mr-5 text-black px-2 py-1">Authentifiée: <button class="bg-red-600 mt-5 text-slate-100 px-2 hover:scale-105 transition-transform rounded-lg">Non</button></p>
+							</div>						
+						</div>
+				</div>
+
+				<div class="bg-white shadow-md rounded-lg overflow-hidden">
+						<div class="px-4 py-2">
+							<h3 class="text-xl font-bold mb-2">Schiste ardoisier</h3>
+						</div>
+						<img src="https://rockidentifier.com/wiki-image/1080/063F2D3D14F848008E3EF39AE6059F96.jpeg" alt="S-Ardoisier" class="w-full h-48 object-contain">
+						<div class="px-4 py-2">
+							<p class="text-gray-700 text-base mb-2">Le Schiste ardoisier est une roche métamorphique fascinante qui a été utilisée pendant des siècles pour la construction, la toiture et même l'écriture. Avec sa texture lisse et uniforme, il est facile de comprendre pourquoi il est si populaire.</p>
+							<div class="flex justify-around mb-2 ">
+								<button id="show-popup" class=" bg-slate-500 mt-5 text-slate-100 px-2 hover:scale-105 transition-transform rounded-xl">En savoir plus</button>
+
+								<div id="popup" class="hidden fixed top-0 left-0 w-full h-full bg-slate-200 bg-opacity-75 flex items-center justify-center">
+									<div class="bg-white flex flex-col justify-center rounded-lg p-8">
+									  <h2 class="text-2xl text-center font-bold text-slate-500 mb-4">Schiste Ardoisier</h2>
+									  <p class="text-lg text-center">Le Schiste ardoisier est composé de minéraux tels que la mica, la chlorite et le quartz. Il est souvent gris foncé ou noir, bien que des variantes de couleur verte, rouge et violette existent également. Le Ilménite se forme à partir de l'argile et de la sédimentation, qui sont soumises à des conditions de chaleur et de pression extrêmes.
+										L'une des caractéristiques les plus remarquables du Ilménite est sa capacité à se diviser en fines feuilles. Cette propriété a été utilisée pour des toitures depuis des siècles, car les feuilles peuvent être empilées pour former un toit étanche. Le Ilménite est également utilisé dans la construction de murs et de sols pour sa durabilité et sa résistance à l'usure.
+										Mais le Ilménite ne se limite pas à la construction. Il a également été utilisé pour la fabrication d'ardoises d'école, de tableaux noirs et même de plaques commémoratives. Sa surface lisse est idéale pour l'écriture à la craie ou à la peinture.</p>
+									  <button id="close-popup" class="bg-slate-500 text-white mx-20 px-4 py-2 rounded-lg mt-4">Fermer</button>
+									</div>
+								</div>
+
+								<p class="mr-5 text-black px-2 py-1">Authentifiée: <button class="bg-orange-500 mt-5 text-slate-100 px-2 hover:scale-105 transition-transform rounded-lg">En cours...</button></p>
+							</div>						
+						</div>
+				</div>
+
+			</div>
+
+			<div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+				<div class="bg-white shadow-md rounded-lg overflow-hidden">
+					<div class="px-4 py-2">
+						<h3 class="text-xl font-bold mb-2">Hollandite</h3>
+					</div>
+					<img src="https://cdn.discordapp.com/attachments/788291502374780958/1105126026448736306/KyouMoche1.png" alt="Hollandite" class="w-full h-48 object-contain">
+					<div class="px-4 py-2">
+						<p class="text-gray-700 text-base mb-2">La hollandite, oh la hollandite ! Cette pierre énigmatique, avec son nom qui sonne comme une chanson de bal folklorique, est une merveille à couper le souffle. Imaginez une nuit étoilée dans le désert, où les étoiles brillent de mille feux, et vous commencerez à comprendre la beauté de la hollandite.</p>
+						<div class="flex justify-around mb-2 ">
+							<button id="show-popup3" class=" bg-slate-500 mt-5 text-slate-100 px-2 hover:scale-105 transition-transform rounded-xl">En savoir plus</button>
+
+							<div id="popup3" class="hidden fixed top-0 left-0 w-full h-full bg-slate-200 bg-opacity-75 flex items-center justify-center">
+								<div class="bg-white flex flex-col justify-center rounded-lg p-8">
+								  <h2 class="text-2xl text-center font-bold text-slate-500 mb-4">Hollandite</h2>
+								  <p class="text-lg text-center">Avec ses cristaux noirs scintillants, la hollandite semble capturer l'essence même de l'univers. Elle est comme un portail vers l'infini, avec ses formations cristallines qui semblent se connecter à une énergie cosmique qui transcende l'espace et le temps. Mais ne vous y trompez pas, la hollandite est aussi puissante qu'elle est belle. Elle est connue pour améliorer la communication avec les êtres spirituels et pour favoriser les rêves lucides et la méditation. Elle peut vous aider à vous connecter à votre intuition et à votre sagesse intérieure, et à trouver des réponses à des questions profondes que vous pourriez avoir. En somme, la hollandite est une pierre qui ne laisse personne indifférent. Elle est à la fois mystique et terre-à-terre, spirituelle et pratique, et elle peut apporter une profondeur et une sagesse à votre vie que vous n'auriez jamais cru possible. Si vous cherchez une pierre qui peut vous aider à vous connecter à quelque chose de plus grand que vous, ou si vous voulez simplement ajouter une touche de magie à votre collection de pierres, la hollandite est définitivement une pierre à considérer.</p>
+								  <button id="close-popup3" class="bg-slate-500 text-white mx-20 px-4 py-2 rounded-lg mt-4">Fermer</button>
+								</div>
+							</div>
+
+
+							<p class="mr-5 text-black px-2 py-1">Authentifiée: <button class="bg-green-700 mt-5 text-slate-100 px-2 hover:scale-105 transition-transform rounded-lg">Oui</button></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-white shadow-md rounded-lg overflow-hidden">
+						<div class="px-4 py-2">
+							<h3 class="text-xl font-bold mb-2">Limonite</h3>
+						</div>
+						<img src="https://cdn.discordapp.com/attachments/788291502374780958/1105126110301270086/KyouMoche2.png" alt="limonite" class="w-full h-48 object-contain">
+						<div class="px-4 py-2">
+							<p class="text-gray-700 text-base mb-2">La limonite, cette pierre qui porte un nom qui rappelle la terre et la boue, est en réalité une pierre fascinante et pleine de surprises. Elle est souvent négligée en raison de sa couleur brune terne, mais ne vous laissez pas tromper par son apparence modeste: c'est une pierre de force, de stabilité et de courage.</p>
+							<div class="flex justify-around mb-2 ">
+								<button id="show-popup4" class=" bg-slate-500 mt-5 text-slate-100 px-2 hover:scale-105 transition-transform rounded-xl">En savoir plus</button>
+
+								<div id="popup4" class="hidden fixed top-0 left-0 w-full h-full bg-slate-200 bg-opacity-75 flex items-center justify-center">
+									<div class="bg-white flex flex-col justify-center rounded-lg p-8">
+									  <h2 class="text-2xl text-center font-bold text-slate-500 mb-4">Limonite</h2>
+									  <p class="text-lg text-center">La limonite est une pierre qui est considérée comme étant une pierre de force et de stabilité. Elle est souvent utilisée pour aider à renforcer la confiance en soi et à surmonter les obstacles et les défis de la vie. De plus, elle est connue pour aider à améliorer la circulation sanguine et pour soulager les douleurs musculaires et articulaires. Mais ce qui rend la limonite vraiment unique, c'est sa composition chimique. Elle est principalement composée d'oxydes de fer hydratés, ce qui signifie qu'elle est riche en fer et en eau. Cette combinaison d'éléments donne à la limonite une énergie très particulière qui peut aider à équilibrer les émotions et à apporter une sensation de paix et de calme intérieur. La limonite est également souvent associée à la croissance personnelle et à la transformation, car elle peut aider à éliminer les blocages émotionnels et à encourager la croissance spirituelle. Elle peut vous aider à vous connecter à la Terre et à ses énergies, ce qui peut être particulièrement bénéfique si vous vous sentez déconnecté de la nature. En somme, la limonite est une pierre qui mérite d'être découverte. Elle peut sembler humble à première vue, mais elle possède une énergie puissante et apaisante qui peut aider à améliorer votre vie à bien des égards. Si vous cherchez une pierre qui peut vous aider à trouver la force et la stabilité dont vous avez besoin pour faire face à la vie, la limonite est une excellente pierre à considérer.</p>
+									  <button id="close-popup4" class="bg-slate-500 text-white mx-20 px-4 py-2 rounded-lg mt-4">Fermer</button>
+									</div>
+								</div>
+
+								<p class="mr-5 text-black px-2 py-1">Authentifiée: <button class="bg-red-600 mt-5 text-slate-100 px-2 hover:scale-105 transition-transform rounded-lg">Non</button></p>
+							</div>						
+						</div>
+				</div>
+
+				<div class="bg-white shadow-md rounded-lg overflow-hidden">
+						<div class="px-4 py-2">
+							<h3 class="text-xl font-bold mb-2">Ilménite</h3>
+						</div>
+						<img src="https://cdn.discordapp.com/attachments/788291502374780958/1105126187245781043/KyouMoche3.png" alt="Ilmonite" class="w-full h-48 object-cover">
+						<div class="px-4 py-2">
+							<p class="text-gray-700 text-base mb-2">L'ilménite est une pierre qui a voyagé à travers les étoiles, portant en elle les histoires de mondes inconnus et de galaxies lointaines. Elle est comme une fenêtre vers l'infini, avec ses couleurs chatoyantes et ses motifs hypnotiques qui évoquent des images de nébuleuses et de galaxies spirales.</p>
+							<div class="flex justify-around mb-2 ">
+								<button id="show-popup5" class=" bg-slate-500 mt-5 text-slate-100 px-2 hover:scale-105 transition-transform rounded-xl">En savoir plus</button>
+
+								<div id="popup5" class="hidden fixed top-0 left-0 w-full h-full bg-slate-200 bg-opacity-75 flex items-center justify-center">
+									<div class="bg-white flex flex-col justify-center rounded-lg p-8">
+									  <h2 class="text-2xl text-center font-bold text-slate-500 mb-4">Ilménite</h2>
+									  <p class="text-lg text-center">Ne vous y trompez pas, l'ilménite n'est pas seulement une pierre belle à regarder. Elle est aussi riche en énergie et en pouvoir magique. Les anciens croyaient qu'elle était une pierre d'illumination, capable d'ouvrir l'esprit à de nouvelles idées et de nouvelles perspectives. Elle peut vous aider à trouver la clarté et la compréhension dans les moments de confusion, et à vous connecter à votre sagesse intérieure et à votre intuition. L'ilménite est également une pierre qui peut aider à vous protéger contre les énergies négatives et les influences psychiques indésirables. Elle peut agir comme un bouclier énergétique, vous aidant à rester centré et équilibré dans les situations difficiles et stressantes. Mais ce qui rend l'ilménite vraiment unique, c'est sa capacité à évoquer des sentiments de joie et d'excitation. Elle peut vous aider à vous sentir inspiré et créatif, et à trouver l'énergie et la motivation dont vous avez besoin pour réaliser vos rêves les plus fous. Elle peut vous aider à vous connecter à votre passion intérieure et à vous encourager à suivre votre propre chemin dans la vie. En somme, l'ilménite est une pierre magique et mystique qui peut vous aider à vous connecter à quelque chose de plus grand que vous. Si vous cherchez une pierre qui peut vous inspirer et vous protéger, ou si vous voulez simplement ajouter une touche de magie à votre vie, l'ilménite est certainement une pierre pour vous.</p>
+									  <button id="close-popup5" class="bg-slate-500 text-white mx-20 px-4 py-2 rounded-lg mt-4">Fermer</button>
+									</div>
+								</div>
+
+								<p class="mr-5 text-black px-2 py-1">Authentifiée: <button class="bg-red-600 mt-5 text-slate-100 px-2 hover:scale-105 transition-transform rounded-lg">Non</button></p>
+							</div>						
+						</div>
+				</div>
+
+			</div>
+
+
+		</section>
+	</main>
+
+    <div class="bg-[#292929] pt-5 text-white w-full h-full">
+        <div class="flex justify-around pb-10">
+            <div class="ml-8">
+                <div class=" pt-7">
+                    <a href="#" class="underline">Chasse aux cailloux annuelle</a>
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex pt-5">
+                        Abonnez-vous pour ne rater aucune newsletter!
+                    </div>
+                    <div class="flex pt-3">
+                        <textarea name="end_mail" id="endmail" cols="30" rows="1" placeholder=" abcd@xyz.com" class="flex text-black text-lg rounded-xl bg-[#D9D9D9]"></textarea>
+                        <a href="#" class="bg-[#D9D9D9] flex px-2 text-xl rounded-xl ml-4 cursor-pointer hover:scale-105"><img src="https://cdn.discordapp.com/attachments/788291502374780958/1105124062725931089/image_16.png" alt="paperplane" class="flex mx-2"></a>
+                    </div>
+                </div>
+                <div class="pt-5 pb-5">
+                    <img src="https://cdn.discordapp.com/attachments/788291502374780958/1105124140299599882/Line_1_1.png" alt="line">
+                </div>
+                <div class="flex">
+                    <div class="flex">
+                        <img src="https://cdn.discordapp.com/attachments/788291502374780958/1105124216585584761/Rectangle_22.png" alt="follow_us">
+                    </div>
+                    <div class="flex underline ml-4 pt-1">
+                    <a href="#">Suivez-nous</a> 
+                    </div>
+    
+                </div>
+                <div class="flex pt-5 pb-5">
+                    Offres exclusives, jeux de pierres, trouvailles, et bien plus!
+                </div>
+            </div>
+            <div class="flex">
+                <iframe src="https://antonethan2014.typeform.com/to/LL55aU4g" frameborder="0" class="rounded-xl"></iframe>
+            </div>
+            <div class="flex flex-col">
+                <div class="flex">
+                    <div>
+                        <img src="https://cdn.discordapp.com/attachments/788291502374780958/1105124339680038962/Rectangle_23.png" alt="General">
+                    </div>
+                    <div class="ml-4">
+                        Général
+                    </div>
+                </div>
+                <div class="flex pt-5">
+                    <ul>
+                        <li>
+                            <a href="#">Qui sommes-nous ?</a> 
+                        </li>
+                        <li>
+                            <a href="#">F.A.Q</a>
+                        </li>
+                        <li>
+                            <a href="#">Conditions Générales de Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Conditions Générales</a>
+                        </li>
+                        <li>
+                            <a href="#">Politique de confidentialité Utilisateurs</a>
+                        </li>
+                        <li>
+                            <a href="#">Utilisation des cookies</a>
+                        </li>
+                        <li>
+                            <a href="#">Mentions légales</a>
+                        </li>
+                        <li>
+                            <a href="#">Collecte avis clients</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+</body>
+</html>

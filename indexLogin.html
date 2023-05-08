@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">  <!-- OPEN SANS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- ROBOTO -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  
+  <style>
+    .error-message {
+      color: #ff0000;
+      margin-bottom: 10px;
+      font-size: 0.875rem;
+    }
+  </style>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"></script>
+    <script src="scriptLogin.js" type="module" defer="true"></script>
+</head>
+
+
+<body class="bg-cover bg-center" style="background-image: url('https://cdn.discordapp.com/attachments/788291502374780958/1104757211755974706/Picsart_23-05-07_15-10-38-852.jpg')">
+    <div class="py-10 flex">
+        <div class="bg-[#EEE2E2] px-2 py-1 mx-8 hover:scale-105 transition-transform text-lg rounded-lg">
+            <a href="indexLanding.html">Retour Acceuil</a> 
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <div class=" bg-[#EEE2E2] px-4 flex rounded-lg text-center py-10 ">
+            ⚠️ Attention: test feature, only use admin login
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <div class="bg-[#EEE2E2] mt-10 rounded-lg shadow-lg px-10 py-10">
+            <h2 class="text-center text-2xl font-bold mb-8 text-center">Connexion</h2>
+            <form action="#" method="post">
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="username"><i class="fa fa-user"></i> Nom d'utilisateur</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="identifiant" name="identifiant" type="text" required>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-bold mb-2" for="password"><i class="fa fa-lock"></i> Mot de passe</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" name="password" type="password" required>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" id="login-form">
+                        <i class="fa fa-sign-in-alt"></i> Se connecter
+                    </button>
+                </div>
+                <div class="text-red-500 mt-4">
+                    <!-- Afficher les messages d'erreur ici -->
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>

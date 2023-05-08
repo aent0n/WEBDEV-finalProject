@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scriptSaison.js" defer="true"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">  <!-- OPEN SANS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- ROBOTO -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyA9kjcDQZPvZXUgpJ8YdkMQjCeRfZL_9k4",
+          authDomain: "nth-pottery-323907.firebaseapp.com",
+          projectId: "nth-pottery-323907",
+          storageBucket: "nth-pottery-323907.appspot.com",
+          messagingSenderId: "19299134769",
+          appId: "1:19299134769:web:d9ba1abcf59f851a10d410"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+
+</head>
+
+  <body>
+    <div id="menu" class="flex justify-around pb-1">
+
+      <div class="flex pr-20">
+          <a href="indexLanding.html" class="connexion text-lg cursor-pointer">⠀⠀Acceuil⠀⠀</a>
+          <a href="indexVente.html" class="connexion text-lg cursor-pointer">⠀⠀Vendre mes Cailloux⠀⠀</a>
+          <a href="indexDiscu.html" class="connexion text-lg cursor-pointer">⠀⠀Caillassons ensemble⠀⠀</a>
+      </div>
+
+      <div class="flex">
+        <a href="indexLanding.html"><img src="https://cdn.discordapp.com/attachments/788291502374780958/1105123885344620644/rsz_2roclogo.jpg" alt="LOGO"></a>
+      </div>
+      
+      <div class=" flex pl-20">
+          <a href="indexCollec.html" class="connexion text-lg cursor-pointer">⠀⠀Mon tas de Cailloux⠀⠀</a>
+          <a href="index.html" class="connexion text-lg cursor-pointer">⠀⠀Acheter des cailloux⠀⠀</a>
+          <a href="indexLogin.html" class="connexion text-lg cursor-pointer">⠀⠀Se connecter⠀⠀</a>
+      </div>
+
+    </div>
+    <header >
+        <div class="justify-center flex justify-around mx-4" id="slider">
+            <img class=" rounded-2xl" src="https://cdn.discordapp.com/attachments/788291502374780958/1103803961699475516/Picsart_23-05-04_23-59-39-893.jpg" alt="seasonRocks-slider" id="slide">
+            <div class="flex  flex-col">
+                <div class="p-10 flex"></div>
+                <div class="max-w-7xl mx-auto py-20 px-4">
+                    <h1 class="text-2xl text-center justify-center underline font-semibold mb-5">Cailloux de saison</h1>
+                    <p class="text-lg text-center justify-center font-semibold mb-5 font-medium max-w-lg">Découvrez notre sélection de cailloux saisonniers, idéaux pour votre jardin ou vos projets de décoration intérieure.</p>
+                    <p class="text-lg text-center justify-center mb-5  max-w-lg">Les cailloux de saison sont des pierres naturelles qui reflètent les couleurs et les énergies de chaque saison. Ajoutez des galets gris au printemps, des pierres de basalte en été, des roches sédimentaires en automne et des cailloux de grès en hiver pour apporter une énergie bénéfique à votre maison ou à votre jardin. Découvrez notre sélection de cailloux saisonniers et laissez-vous inspirer par les couleurs et les énergies de chaque saison.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    
+    <section class="py-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-16 mt-5">Nos cailloux saisonniers</h2>
+            <div class="flex  justify-around ml-20">
+                <p>Printemps</p>
+                <p>Été</p>
+                <p>Automne</p>
+                <p>Hiver</p>
+            </div>
+            <div class=" flex  py-8 px-2  justify-around mb-20">
+                <div class="flex ml-20 " id="slider1">
+                    <img class="flex rounded-2xl scale-125" src="./ressources/Saison/cards/printemps/Group 33calcaire.svg" alt="team slider" id="slide1">
+                </div>
+                <div class="flex ml-20 " id="slider2">
+                    <img class="flex rounded-2xl scale-125" src="./ressources/Saison/cards/été/Group 23sand.svg" alt="team slider" id="slide2">
+                </div>
+                <div class="flex ml-20 " id="slider3">
+                    <img class="flex rounded-2xl scale-125" src="./ressources/Saison/cards/automne/Group 18gravier.svg" alt="team slider" id="slide3">
+                </div>
+                <div class="flex ml-20" id="slider4">
+                    <img class="flex rounded-2xl scale-125" src="./ressources/Saison/cards/hiver/Group 28quartzite.svg" alt="team slider" id="slide4">
+                </div>
+            </div>
+
+
+
+            <div class="grid grid-cols-2 gap-4 mb-5">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <img src="https://thumbs.dreamstime.com/b/un-morceau-de-calcaire-sur-fond-blanc-pi%C3%A8ce-approximatif-192857859.jpg" alt="calcaire" class="mb-4">
+                    <h3 class="text-xl font-bold mb-2">Caillou Calcaire</h3>
+                    <p class="mb-4">Le calcaire est une pierre magique qui se forme dans les eaux cristallines des mers anciennes, où les fées marines et les sirènes dansent sous la lueur de la lune. Cette roche sédimentaire est composée de minuscules coquillages et de squelettes de créatures marines, qui se sont transformés en une substance dure et solide au fil du temps.
+                        Le calcaire est un matériau précieux pour les artisans et les artistes, qui l'utilisent pour créer des chefs-d'œuvre de pierre taillée. Ses variations de couleur, allant du blanc pur au beige doré, sont comme les nuances changeantes de la mer sous le soleil. Le calcaire peut être sculpté en de magnifiques motifs floraux et animaux, qui semblent prendre vie sous les doigts du sculpteur.
+                        En plus d'être une pierre d'une grande beauté, le calcaire est également connu pour ses propriétés magiques. On dit que le calcaire a le pouvoir de purifier l'eau et de guérir les maux de tête et les douleurs corporelles. Les sorcières et les mages l'utilisent souvent dans leurs sorts et leurs potions, pour ses propriétés curatives et protectrices.</p>
+                    <button style="cursor: not-allowed" class="bg-slate-500 mt-5 text-slate-100 px-2 py-2 hover:scale-105 transition-transform rounded-xl">Acheter maintenant</button>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <img src="https://thumbs.dreamstime.com/b/schist-gneiss-rock-isolated-white-background-metamorphic-rock-schist-gneiss-produced-medium-to-high-grade-193623779.jpg" alt="Caillou 2" class="mb-4">
+                    <h3 class="text-xl font-bold mb-2">Caillou Gneiss</h3>
+                    <p class="mb-4">Le gneiss est une pierre mystique qui se forme dans les profondeurs de la Terre, où les esprits des montagnes et des volcans se rencontrent. Cette roche métamorphique est composée de minéraux cristallins, qui se sont transformés sous la pression et la chaleur en une substance dure et résistante.
+                        Le gneiss est une pierre d'une grande beauté et de puissance. Ses couleurs chatoyantes, allant du gris argenté au brun doré, sont comme les reflets de la lumière du soleil sur les cimes enneigées des montagnes. Le gneiss peut être taillé en de magnifiques sculptures de roche, qui semblent contenir la sagesse ancienne des esprits de la montagne.
+                        En plus d'être une pierre d'une grande beauté, le gneiss est également connu pour ses propriétés magiques. On dit que le gneiss a le pouvoir de renforcer la volonté et de protéger contre les forces négatives. Les chamanes et les sorciers l'utilisent souvent dans leurs rituels, pour sa capacité à canaliser l'énergie des esprits des montagnes et à libérer les blocages émotionnels.</p>
+                    <button style="cursor: not-allowed" class="bg-slate-500 mt-5 text-slate-100 px-2 py-2 hover:scale-105 transition-transform rounded-xl">Acheter maintenant</button>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <img src="https://thumbs.dreamstime.com/b/pierre-rugueuse-de-peridotite-d-isolement-sur-le-blanc-105508371.jpg" alt="Caillou 3" class="mb-4">
+                    <h3 class="text-xl font-bold mb-2">Caillou Péridotite</h3>
+                    <p class="mb-4">La péridotite est une pierre magique qui se forme dans les profondeurs de la Terre, où les dragons de feu et les fées des éléments se rencontrent. Cette roche ignée est composée de minéraux riches en magnésium et en fer, qui se sont cristallisés sous la chaleur et la pression de la lave en fusion.
+                        La péridotite est une pierre d'une grande beauté et de pouvoir. Ses couleurs allant du vert olive au noir profond sont comme les couleurs de la forêt enchantée, où les fées dansent sous la lumière de la lune. La péridotite peut être taillée en de magnifiques bijoux et amulettes, qui semblent contenir la puissance des éléments.
+                        En plus d'être une pierre d'une grande beauté, la péridotite est également connue pour ses propriétés magiques. On dit que la péridotite a le pouvoir de renforcer la vitalité et la force intérieure, ainsi que de protéger contre les forces sombres. Les alchimistes et les sorciers l'utilisent souvent dans leurs rituels, pour sa capacité à canaliser l'énergie des dragons de feu et des fées des éléments.</p>
+                    <button style="cursor: not-allowed" class="bg-slate-500 mt-5 text-slate-100 px-2 py-2 hover:scale-105 transition-transform rounded-xl">Acheter maintenant</button>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <img src="https://www.france-mineraux.fr/wp-content/uploads/2019/05/pierre-dolomite.jpg" alt="Caillou 4" class="mb-4">
+                    <h3 class="text-xl font-bold mb-2">Caillou Dolomite</h3>
+                    <p class="mb-4">La dolomite est une pierre enchantée qui se forme dans les profondeurs des grottes cristallines, où les fées de la lumière et les licornes magiques se rencontrent. Cette roche sédimentaire est composée de carbonate de calcium et de magnésium, qui se sont cristallisés sous l'eau pure et claire.
+                        La dolomite est une pierre d'une grande beauté et de pureté. Ses couleurs allant du blanc brillant au rose tendre sont comme les couleurs de l'aube, où les fées sortent de leur sommeil pour danser dans la lumière douce. La dolomite peut être taillée en de magnifiques sculptures et objets de décoration, qui semblent contenir la magie de la pureté et de la lumière.
+                        En plus d'être une pierre d'une grande beauté, la dolomite est également connue pour ses propriétés magiques. On dit que la dolomite a le pouvoir de purifier l'esprit et de stimuler la créativité. Les artistes et les écrivains l'utilisent souvent pour stimuler leur imagination et leur inspiration, pour créer des œuvres d'art et des histoires magiques.</p>
+                    <button style="cursor: not-allowed" class="bg-slate-500 mt-5 text-slate-100 px-2 py-2 hover:scale-105 transition-transform rounded-xl">Acheter maintenant</button>
+                </div>
+            </div>
+            <h2 class="text-3xl mt-10 text-center font-bold mb-5">Conseils pour choisir des cailloux de saison</h2>
+            <ul class="list-disc text-center justify-center list-inside mb-5">
+                <li class="mb-2">Choisissez des cailloux qui s'accordent avec les couleurs de votre jardin ou de votre maison.</li>
+                <li class="mb-2">Optez pour des cailloux de différentes tailles et formes pour créer des textures intéressantes.</li>
+                <li class="mb-2">Soyez créatif et amusez-vous en choisissant des cailloux uniques pour votre espace.</li>
+                <li>Pensez à la fonctionnalité des cailloux.</li>
+            </ul>
+        </div>
+    </section>
+    <div class="bg-[#292929] pt-5 text-white w-full h-full">
+        <div class="flex justify-around pb-10">
+            <div class="ml-8">
+                <div class=" pt-7">
+                    <a href="#" class="underline">Chasse aux cailloux annuelle</a>
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex pt-5">
+                        Abonnez-vous pour ne rater aucune newsletter!
+                    </div>
+                    <div class="flex pt-3">
+                        <textarea name="end_mail" id="endmail" cols="30" rows="1" placeholder=" abcd@xyz.com" class="flex text-black text-lg rounded-xl bg-[#D9D9D9]"></textarea>
+                        <a href="#" class="bg-[#D9D9D9] flex px-2 text-xl rounded-xl ml-4 cursor-pointer hover:scale-105"><img src="https://cdn.discordapp.com/attachments/788291502374780958/1105124062725931089/image_16.png" alt="paperplane" class="flex mx-2"></a>
+                    </div>
+                </div>
+                <div class="pt-5 pb-5">
+                    <img src="https://cdn.discordapp.com/attachments/788291502374780958/1105124140299599882/Line_1_1.png" alt="line">
+                </div>
+                <div class="flex">
+                    <div class="flex">
+                        <img src="https://cdn.discordapp.com/attachments/788291502374780958/1105124216585584761/Rectangle_22.png" alt="follow_us">
+                    </div>
+                    <div class="flex underline ml-4 pt-1">
+                    <a href="#">Suivez-nous</a> 
+                    </div>
+    
+                </div>
+                <div class="flex pt-5 pb-5">
+                    Offres exclusives, jeux de pierres, trouvailles, et bien plus!
+                </div>
+            </div>
+            <div class="flex">
+                <iframe src="https://antonethan2014.typeform.com/to/LL55aU4g" frameborder="0" class="rounded-xl"></iframe>
+            </div>
+            <div class="flex flex-col">
+                <div class="flex">
+                    <div>
+                        <img src="https://cdn.discordapp.com/attachments/788291502374780958/1105124339680038962/Rectangle_23.png" alt="General">
+                    </div>
+                    <div class="ml-4">
+                        Général
+                    </div>
+                </div>
+                <div class="flex pt-5">
+                    <ul>
+                        <li>
+                            <a href="#">Qui sommes-nous ?</a> 
+                        </li>
+                        <li>
+                            <a href="#">F.A.Q</a>
+                        </li>
+                        <li>
+                            <a href="#">Conditions Générales de Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Conditions Générales</a>
+                        </li>
+                        <li>
+                            <a href="#">Politique de confidentialité Utilisateurs</a>
+                        </li>
+                        <li>
+                            <a href="#">Utilisation des cookies</a>
+                        </li>
+                        <li>
+                            <a href="#">Mentions légales</a>
+                        </li>
+                        <li>
+                            <a href="#">Collecte avis clients</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+</body>
+</html>
